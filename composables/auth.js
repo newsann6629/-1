@@ -71,6 +71,7 @@ export const useauth = () => {
     }
 
     return {
+        gettime,
         register,
         login,
         getregis,
