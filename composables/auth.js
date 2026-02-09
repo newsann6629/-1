@@ -60,6 +60,15 @@ export const useauth = () => {
         }
     }
 
+    const gettime = async() => {
+        try {
+            const res = await axios.get("api/auth/time")
+            return res.data.data
+        }catch(err){
+            alert("Something Went Wrong")
+            console.log(err)
+        }
+    }
 
     return {
         register,
